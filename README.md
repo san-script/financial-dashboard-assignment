@@ -58,7 +58,7 @@ Inside the `backend` directory:
 npm start
 ```
 
-The backend server will run at `http://localhost:3001`.
+The backend server will run at `http://localhost:4000`.
 
 ### Running Unit Tests
 
