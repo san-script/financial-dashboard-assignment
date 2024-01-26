@@ -1,0 +1,221 @@
+/* Dashboard.css */
+
+/* Global Styles */
+body {
+  font-size: 16px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f5f8;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+
+  
+}
+
+/* Dashboard Controls Styles */
+.dashboard-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.dashboard-controls,
+.date-range-selector,
+.asset-class-selector,
+.asset-selector {
+  flex: 1 1 100%;
+  margin-bottom: 10px;
+}
+
+/* Option Selector Styles */
+.option-selector,.date-selector {
+  
+  text-align: left;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  
+}
+
+.option-selector label {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.option-selector .react-select__control {
+  width: 80%;
+}
+
+.option-selector .react-select__control .react-select__indicators {
+  margin-left: 10px;
+}
+
+.option-selector .react-select__menu {
+  font-size: 14px;
+}
+
+/* Charts Container Styles */
+.charts-container {
+  display: flex;
+  gap: 25;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.07);
+  margin: 20px 0;
+}
+
+.chart {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .chart {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+/* Responsive Font Sizes */
+.heading,
+.title-blocks {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Other Styles */
+.charts-full-wrap {
+  width: 100%;
+}
+
+.chartsstyle {
+  font-size: 12px;
+}
+
+.table-wrap {
+  padding: 5px;
+  background: #fff;
+  border-radius: 14px;
+  width: 100%;
+}
+
+.port-val {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.port-val h4 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.portfolio-value {
+  color: #0052cc;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.table-wrap th {
+  border-color: #3f87a6;
+  background: #3f87a6;
+  color: #fff;
+  font-size: 14px;
+}
+
+.table-wrap td {
+  border-color: #ededed;
+  color: #000;
+  font-size: 14px;
+}
+
+/* Dashboard Controls Top Styles */
+.dashboard-controls-top {
+  padding: 20px 5px;
+  background: #fff;
+  border-radius: 14px;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.as-sector {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.as-sector label {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Date Range Selector Styles */
+.date-range-selector {
+  padding: 20px 20px;
+  background: #fff;
+  border-radius: 14px;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.re-date-picker {
+  position: relative;
+}
+
+.react-datepicker {
+  position: absolute;
+  left: 15px;
+  top: 50px;
+  z-index: 9;
+}
+
+.datepicker-input {
+  width: 300px;
+  height: 42px;
+  text-indent: 10px;
+  font-size: 13px;
+  outline: none !important;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+/* Animation Styles */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
